@@ -43,6 +43,7 @@ It focuses on applying **Spring Data JPA**, **Entity Relationships**, and **Serv
 
 ### 🏗️ Project Structure
 
+```
 learnTransaction/
 ├── controller/
 │ ├── AuthorController.java
@@ -61,7 +62,7 @@ learnTransaction/
 │ ├── BookService.java
 │ └── CategoryService.java
 └── LearnTransactionApplication.java
-
+```
 ---
 
 ## ⚙️ How to Run
@@ -82,27 +83,15 @@ http://localhost:8080
 📡 API Endpoints
 📖 Books
 Method	Endpoint	Description
-POST	/books/{authorId}	Add a new book for a specific author
-GET	/books	Get all books
-GET	/books/{id}	Get a book by ID
-PUT	/books/{id}	Update a book
-DELETE	/books/{id}	Delete a book
-GET	/books/author/{authorId}	Get all books of an author
-👨‍💻 Authors
-Method	Endpoint	Description
-POST	/authors	Add a new author
-GET	/authors	Get all authors
-GET	/authors/{id}	Get author by ID
-PUT	/authors/{id}	Update an author
-PATCH	/authors/{id}?name=newName	Update only author name
-DELETE	/authors/{id}	Delete an author
-🏷️ Categories
-Method	Endpoint	Description
-POST	/categories	Add new category
-GET	/categories	Get all categories
-GET	/categories/{id}	Get category by ID
-PUT	/categories/{id}	Update category
-DELETE	/categories/{id}	Delete category
+| Method   | Endpoint                   | Description                          |
+| -------- | -------------------------- | ------------------------------------ |
+| `POST`   | `/books/{authorId}`        | Add a new book for a specific author |
+| `GET`    | `/books`                   | Get all books                        |
+| `GET`    | `/books/{id}`              | Get a book by ID                     |
+| `PUT`    | `/books/{id}`              | Update a book                        |
+| `DELETE` | `/books/{id}`              | Delete a book                        |
+| `GET`    | `/books/author/{authorId}` | Get all books by author ID           |
+
 
 
 
