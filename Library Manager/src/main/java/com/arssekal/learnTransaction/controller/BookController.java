@@ -49,10 +49,7 @@ public class BookController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-    /*
-    DELETE /books/{id} → appeler deleteBook()
-    GET /books/author/{authorId} → appeler getBooksByAuthor()
-     */
+
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteBook(@PathVariable int id) {
         try {
